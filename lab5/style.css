@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* overflow: hidden; */
+    background: lightgray;
+  }
+  
+  .wrapper {
+    height: 100vh;
+    width: 98vw;
+    margin: 15px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: #FFFFFF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .sidebar {
+    height: 100%;
+    background:#F5F5F5;
+    border-radius: inherit;
+    padding: 100px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+   .sidebar .portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items:center;
+  }
+  
+  .sidebar .portfolio img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+  }
+  
+  .sidebar .portfolio p {
+    font-size: xx-large;
+    color:  #534646;
+  }
+  
+  .sidebar .portfolio p span {
+    font-weight: 800;
+  }
+  
+  .sidebar .portfolio .description {
+    padding: 5px 15px;
+    border-radius: 15px;
+    background: lightgray;
+    font-weight: 300;
+    color: #534646;
+    font-size: large;
+  } 
+  .sidebar .sidebar__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .sidebar .sidebar__list .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #534646;
+    font-size: x-large;
+  } 
+  
+  
+  .sidebar .sidebar__list .sidebar__resources li{
+    list-style: none;
+    font-size: large;
+    display: flex;
+    gap: 15px;
+    color: #534646;
+    margin-left: 25%;
+    margin-top: 10px;
+  }
+  
+  .sidebar .sidebar__footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .sidebar .sidebar__footer button {
+    color: white;
+    background: #3333ff;
+    padding: 15px 25px;
+    font-size: x-large;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  main {
+    background: inherit;
+    height: 100%;
+    border-radius: inherit;
+    padding: 20px;
+  }
+  
+  main .navbar {
+    margin-top: 30px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .navbar li {
+    display: block;
+    padding: 5px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    flex-basis: 150px;
+    transition: 1s;
+    cursor: pointer;
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 800;
+  }
+  
+  .navbar li:hover {
+    background: #9966ff;
+  }
+  
+  .navbar li:hover a {
+    color: white;
+  }
+  
+  .main__content__wrapper {
+    padding: 30px 50px;
+  }
+  
+  .main__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .main__content .content__header {
+    color: #49504e;
+  }
+  
+  .main__content .content__header .line{
+    position: relative;
+    margin-top: 10px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    height: 5px;
+    background: blue;
+  }
+  
+  .main__content .content__header .line::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 30%;
+    border-radius: 10px;
+    background: orange;
+    left: -1px;
+  }
+  
+  .main__content .main__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: gray;
+  }
+  
+  .main__content .proffessions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .main__content .proffessions .proffessions__header {
+    font-size: xx-large;
+    font-weight: 800;
+    color: #49504e;
+  }
+  
+  .proffessions .proffessions__list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 200px;
+    grid-gap: 40px;
+  }
+  
+  .proffession__card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid rgba(211, 211, 211, 0.884);
+    border-radius: 20px;
+  }
+  
+  .proffession__card .icon {
+    font-size: xx-large;
+    color: blue;
+  }
+  
+  .proffession__card .header {
+    font-size: x-large;
+    font-weight: 800;
+  }
+  
+  .proffession__card .text {
+    color: #49504e; 
+  }
+  
